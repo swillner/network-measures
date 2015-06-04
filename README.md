@@ -22,15 +22,12 @@ The value of GAP provides the percentage production failure of the total product
 
 More specific its definition is, for 0th order (let U be the set of forced regional sectors, e.g. in zeean all regional sectors in a chosen region):
 
-![](http://www.sciweavers.org/tex2img.php?eq=%5Ctext%7BGAP%7D%5E%7B%280%29%7D_%7BU%5Crightarrow%20js%7D%20%5Cequiv%20%5Cbegin%7Bcases%7D1%20%26%20js%5Cin%20U%5C%5C0%20%26%20js%5Cnotin%20U%5Cend%7Bcases%7D&bc=Transparent&fc=Black&im=png&fs=12&ff=mathpazo&edit=0)
-<!-- \text{GAP}^{(0)}_{U\rightarrow js} \equiv \begin{cases}1 & js\in U\\0 & js\notin U\end{cases} -->
+![\text{GAP}^{(0)}_{U\rightarrow js} \equiv \begin{cases}1 & js\in U\\0 & js\notin U\end{cases}](eqn1.png?raw=true)
 
 Then the k-th order is defined recursively as:
 
-![](http://www.sciweavers.org/tex2img.php?eq=%5Ctext%7BGAP%7D%5E%7B%28k%29%7D_%7BU%5Crightarrow%20js%7D%20%5Cequiv%201-%5Cmin_%7B%5Ctext%7BSectors%20%7Di%7D%5Cleft%28%5Cfrac%7B%5Csum_%7B%5Ctext%7BRegions%20%7Dr%7D%281-%5Ctext%7BGAP%7D%5E%7B%28k-1%29%7D_%7BU%5Crightarrow%20ir%7D%29%5Ccdot%20Z_%7Bir%5Crightarrow%20js%7D%7D%7B%5Csum_%7B%5Ctext%7BRegions%20%7Dr%7DZ_%7Bir%5Crightarrow%20js%7D%7D%5Cright%29&bc=Transparent&fc=Black&im=png&fs=12&ff=mathpazo&edit=0)
-<!-- \text{GAP}^{(k)}_{U\rightarrow js} \equiv 1-\min_{\text{Sectors }i}\left(\frac{\sum_{\text{Regions }r}(1-\text{GAP}^{(k-1)}_{U\rightarrow ir})\cdot Z_{ir\rightarrow js}}{\sum_{\text{Regions }r}Z_{ir\rightarrow js}}\right) -->
+![\text{GAP}^{(k)}_{U\rightarrow js} \equiv 1-\min_{\text{Sectors }i}\left(\frac{\sum_{\text{Regions }r}(1-\text{GAP}^{(k-1)}_{U\rightarrow ir})\cdot Z_{ir\rightarrow js}}{\sum_{\text{Regions }r}Z_{ir\rightarrow js}}\right)](eqn2.png?raw=true)
 
 And for a "target" region r:
 
-![](http://www.sciweavers.org/tex2img.php?eq=%5Ctext%7BGAP%7D%5E%7B%28k%29%7D_%7BU%5Crightarrow%20r%7D%20%5Cequiv%20%5Csum_%7B%5Ctext%7BSectors%20%7Di%7D%5Cfrac%7B%281-%5Ctext%7BGAP%7D%5E%7B%28k-1%29%7DZ_%7BU%5Crightarrow%20ir%7D%29%5CcdotZ_%7Bir%5Crightarrow%20js%7D%7D%7B%5Csum_%7B%5Ctext%7BSectors%20%7Di%2C%5Ctext%7BRegional%20sectors%20%7Djs%7DZ_%7Bir%5Crightarrow%20js%7D%7D&bc=Transparent&fc=Black&im=png&fs=12&ff=mathpazo&edit=0)
-<!-- \text{GAP}^{(k)}_{U\rightarrow r} \equiv \sum_{\text{Sectors }i}\frac{(1-\text{GAP}^{(k-1)}Z_{U\rightarrow ir})\cdotZ_{ir\rightarrow js}}{\sum_{\text{Sectors }i,\text{Regional sectors }js}Z_{ir\rightarrow js}} -->
+![\text{GAP}^{(k)}_{U\rightarrow r} \equiv \sum_{\text{Sectors }i}\frac{(1-\text{GAP}^{(k-1)}Z_{U\rightarrow ir})\cdotZ_{ir\rightarrow js}}{\sum_{\text{Sectors }i,\text{Regional sectors }js}Z_{ir\rightarrow js}}](eqn3.png?raw=true)
