@@ -30,4 +30,4 @@ Then the k-th order is defined recursively as:
 
 And for a "target" region r:
 
-![\text{GAP}^{(k)}_{U\rightarrow r} \equiv \sum_{\text{Sectors }i}\frac{(1-\text{GAP}^{(k-1)}Z_{U\rightarrow ir})\cdotZ_{ir\rightarrow js}}{\sum_{\text{Sectors }i,\text{Regional sectors }js}Z_{ir\rightarrow js}}](eqn3.png?raw=true)
+![\text{GAP}^{(k)}_{U\rightarrow r} \equiv 1-\frac{\sum_{\text{Sectors }i}((1-\text{GAP}^{(k)}_{U\rightarrow ir})\cdot \sum_{\text{Regional sectors }js}Z_{ir\rightarrow js})}{\sum_{\text{Sectors }i,\text{Regional sectors }js}Z_{ir\rightarrow js}}](eqn3.png?raw=true)
